@@ -1,0 +1,4 @@
+ const moduleA = {
+}
+
+export {moduleA}
