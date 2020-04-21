@@ -9,6 +9,8 @@ Vue.use(VueLazyload, {
   loading: require('assets/img/common/placeholder.png')
 })
 
+Vue.prototype.$bus = new Vue()
+
 Vue.config.productionTip = false
 
 new Vue({

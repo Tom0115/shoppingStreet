@@ -1,6 +1,6 @@
 <template>
-  <div class="goods-list-item">
-    <img v-lazy="goodsItem.show.img" alt="">
+  <div class="goods-list-item" @click="ItemDetail">
+    <img v-lazy="goodsItem.show.img" alt="" @load="changeItemImg">
     <div class="goodsMessage">
       <p>{{goodsItem.title}}</p>
       <span class="price">¥{{goodsItem.price}}</span>
@@ -22,6 +22,14 @@
     },
     data() {
       return {}
+    },
+    methods: {
+      changeItemImg() {
+        this.$bus.$emit('changeItemImg')
+      },
+      ItemDetail() {
+        this.$router.push('/detail/' + this.goodsItem.iid)
+      }
     }
   }
 </script>
@@ -34,7 +42,6 @@
     background-color: #fff;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
   }
 
   .goods-list-item img{

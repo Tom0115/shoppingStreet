@@ -1,16 +1,20 @@
 <template>
   <div id="app">
-    <Home />
+    <current-nav-bar />
+    <keep-alive exclude="detail">
+      <router-view />
+    </keep-alive>
   </div>
 </template>
 
 <script>
-  import Home from "views/home/Home";
+
+  import CurrentNavBar from "components/content/currenttabbar/CurrentTabBar";
 
   export default {
     name: 'app',
     components: {
-      Home
+      CurrentNavBar
     },
     data() {
       return {

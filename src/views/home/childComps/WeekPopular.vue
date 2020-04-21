@@ -11,6 +11,8 @@
     name: "WeekPopular",
     data() {
       return {}
+    },
+    methods: {
     }
   }
 </script>

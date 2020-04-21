@@ -21,11 +21,8 @@
     height: 44px;
     line-height: 44px;
     text-align: center;
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    z-index: 1;
+    position: relative;
+    z-index: 2;
   }
 
   .left,

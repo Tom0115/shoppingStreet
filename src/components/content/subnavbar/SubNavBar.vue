@@ -44,9 +44,6 @@
     text-align: center;
     font-size: 15px;
     background-color: #fff;
-    margin-top: 4px;
-    position: sticky;
-    top: 44px;
   }
 
   .sub-nav-bar-item {
